@@ -21,6 +21,7 @@ app.use(express.json());
 app.use(userRouter);
 app.use(cookieParser);
 app.use(errorHandler);
+// endpoint to check if the API server is running once deployed
 app.get("/health", (req, res) => {
 	res.status(200).send({ message: "API is working" });
 });
