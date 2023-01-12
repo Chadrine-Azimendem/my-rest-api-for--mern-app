@@ -1,6 +1,5 @@
 const User = require("./userModel");
 const jwt = require("jsonwebtoken");
-const { restart } = require("nodemon");
 const ErrorResponse = require("../utils/errorResponse");
 
 // test
